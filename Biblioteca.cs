@@ -52,7 +52,7 @@ public class Bibilioteca
         }
         foreach (Book book in Books)
         {
-            if (book.Title.Contains(search)|| book.ISBN == search )
+            if (book.Title == search || book.ISBN == search )
             {
                 resaults.Add(book);
             }
