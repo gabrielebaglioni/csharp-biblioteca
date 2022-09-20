@@ -2,18 +2,13 @@ public class Book : Product
 {
 
     public int Pages { get; set; }
+    public string ISBN { get; set; }
 
 
-    public Book(int serialCode, string title, int year, string category, bool state, int position, string authorName, int pages)
+    public Book(string title, int year, string category, int position, string authorName, int pages, string isbn ) : base(title, year, category, position, authorName)
     {
-        SerialCode = serialCode;
-        Title = title;
-        Year = year;
-        Category = category;
-        State = state;
-        Position = position;
-        AuthorName = authorName;
         Pages = pages;
+        ISBN = isbn;
     }
 
 }
