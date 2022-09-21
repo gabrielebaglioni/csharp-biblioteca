@@ -40,24 +40,24 @@ public class Bibilioteca
 
     public List<Product>SearchProduct(string search)
     {
-        List<Product> resaults = new List<Product>();
+        List<Product> results = new List<Product>();
 
 
         foreach (Film film in Films)
         {
             if (film.Title == search || film.Serial == search)
             {
-                resaults.Add(film);
+                results.Add(film);
             }
         }
         foreach (Book book in Books)
         {
             if (book.Title == search || book.ISBN == search )
             {
-                resaults.Add(book);
+                results.Add(book);
             }
         }
-        return resaults;
+        return results;
         
     }
 }
